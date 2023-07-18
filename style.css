@@ -1,0 +1,116 @@
+body {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    background: #99acdf;
+}
+
+
+header {
+    text-align: center;
+    border: 5px solid rgb(0, 89, 190);
+    height: 70%;
+    width: 70%;
+    margin: 30px auto;
+}
+
+h1 {
+    
+    font-size: 3em;
+    color: rgb(62, 3, 77);
+}
+
+
+.btn {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    color:blueviolet;
+    background-color:azure;
+    border: 10px solid aquamarine;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+                 /*All 0.3s*/
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+    background-color: black;
+    color:blanchedalmond;
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px)
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+    /* animation: name duration timing-function delay
+       iteration-count direction fill-mode; 
+       (can remove default)*/
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 320px;
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.text-box {
+    color: #fff;
+    /* width: 60vw; */
+}
+
+.text-box h2 {
+    font-size: 42px;
+}
+
+.text-box p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.item1 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.item2 {
+    position: sticky;
+    top: 0px;
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
