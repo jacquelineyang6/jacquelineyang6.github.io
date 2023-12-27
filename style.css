@@ -4,6 +4,7 @@ body {
     align-items: center; */
     min-height: 100vh;
     background: #99acdf;
+    font-family: 'Oswald';
 }
 
 
@@ -69,7 +70,7 @@ h1 {
     margin: 0;
     padding: 0;
     box-sizing: boder-box;
-    font-family: 'Poppins', sans-serif;
+    
 }
 
 img {
@@ -113,4 +114,8 @@ img {
     justify-content: space-around;
     align-items: center;
 
+}
+
+canvas {
+    background-color: #fff;
 }

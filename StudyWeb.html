@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="stylestudy.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/video (1080p).mp4" type="video/mp4">
+    </video>
+    <div class="title">
+        <h1>Space Studying</h1>
+    </div>
+
+    <div class="submit">
+    <input type="submit" value="Study" onclick="studyValue()">
+        <input type="submit" value="Break" onclick="breakValue()">
+    </div>
+
+    <div class="inputBox">
+        <p>Hour</p>
+        <input type="number" id="hour" value="0" min="0">
+        <p>Minute</p>
+        <input type="number" id="minute" value="50" min="0">
+        <p>Second</p>
+        <input type="number" id="second" value="0" min="0">
+    </div>
+
+    <div class="submit">
+        <input type="submit" value="Start Timer" onclick="startTimer()">
+        <input type="submit" value="Stop Timer" onclick="stopTimer()">
+    </div>
+
+    <div class="todoList">
+        <h2>To Do List <img src="images/icon.png"></h2>
+        <div class="todoInput">
+            <input type="text" id="inputToDo" placeholder="Add a new task!😊">
+            <button onclick="addReminder()">Add</button>
+        </div>
+        <ul id="list-container"></ul>
+        <button class="clearRem" onclick="clearReminders()">Clear Reminders</button>
+    </div>
+
+    <div class="utubeVideos">
+        <iframe width="560" height="315" id="studyVideo" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+        <iframe width="560" height="315" id="playlist"
+            src="https://www.youtube.com/embed/videoseries?loop=1&list=PLjFqhT1lJSsAgY9h3kg4vL2wQkSPfzKzp"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <br>
+    <button id="videoButton">Videos</button>
+    <button id="playlistButton">Playlist videos</button>
+
+    <script src="studyVideo.js"></script>
+    <script src="studyWeb.js"></script>
+
+    <div class="GeneQuote"> 
+        <button onclick="createQuote()"> Generate Quote </button>
+    </div>
+
+</body>
+
+</html>
